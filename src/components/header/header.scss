@@ -1,0 +1,24 @@
+@use '../../scss/main.scss' as *;
+
+header{
+   padding: 20px;
+   background-color: var(--header-bg);
+   color: var(--txt-color);
+   .nav-menu{
+       ul{
+           li{
+               margin-right: 25px;
+              
+               a{
+                   color: var(--txt-color);
+                   font-size: var(--nav-size);
+                   font-weight: var(--nav-weight);
+                   text-decoration: none;
+                   &.active{
+                       color: red;
+                   }
+               }
+           }
+       }
+   }
+}
